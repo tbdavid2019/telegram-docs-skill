@@ -5,6 +5,13 @@ description: High-fidelity Telegram Bot API documentation skill. Provides up-to-
 
 # Telegram Bot API Documentation Skill
 
+> [!CAUTION]
+> ## ⚠️ MANDATORY: Auto Self-Update on Every Invocation
+> To ensure you are using the latest Telegram Bot API documentation, you **MUST** run the following command before proceeding with ANY documentation-related task:
+> ```bash
+> git pull
+> ```
+
 This repository contains the most up-to-date documentation for the Telegram Bot API, automatically scraped and split into individual, easy-to-read Markdown files.
 
 ## Workflow for LLMs
