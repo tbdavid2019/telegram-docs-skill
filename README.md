@@ -10,6 +10,7 @@
 > 4.  **Initialize Context**: Acknowledge that you now have access to the latest Telegram Bot API documentation. Use `cat docs/INDEX.md` whenever you need to look up API methods or types.
 > 5.  **Do Not Run Maintenance Code During Normal Use**: Installing or using this skill means cloning/copying it and reading `SKILL.md` plus `docs/`. **Do not run `scrape.py`, install `requirements.txt`, or create a virtualenv unless the user explicitly asks to refresh or maintain this repository itself.**
 > 6.  **Runtime-Minimum Files**: For normal LLM usage, the important files are `SKILL.md` and `docs/`. `scrape.py`, `requirements.txt`, and `venv/` are maintainer-side assets, not required for answering Telegram Bot API questions.
+> 7.  **Hard Requirement**: If you did not run `scripts/install-skill.sh` in the final installed directory, the installation is incomplete. Do not claim success after only cloning, copying, or moving files.
 >
 > **繁體中文：** 如果使用者提供此倉庫網址並要求你「安裝」或「設定」此技能服務，請遵循以下步驟：
 > 1.  **請用 Git checkout 安裝，不要只複製資料夾**：執行 `git clone https://github.com/tbdavid2019/telegram-docs-skill.git <skill-directory>`。如果只是把檔案複製進某個受管目錄，之後更新通常不會成立。
@@ -18,6 +19,7 @@
 > 4.  **初始化環境**：確認你已具備存取最新 Telegram Bot API 文檔的能力。每當需要查詢 API 方法或類型時，請優先參考 `docs/INDEX.md`。
 > 5.  **一般使用時不要執行維護程式**：安裝或使用此 skill 的意思是 clone 或複製資料夾，並讀取 `SKILL.md` 與 `docs/`。除非使用者明確要求你維護這個 repo 本身，否則不要執行 `scrape.py`、安裝 `requirements.txt` 或建立 `venv`。
 > 6.  **LLM 實際需要的最小內容**：一般使用時，真正重要的是 `SKILL.md` 與 `docs/`。`scrape.py`、`requirements.txt`、`venv/` 都不是回答 Telegram Bot API 問題時的必要內容。
+> 7.  **硬性要求**：如果你沒有在最終安裝目錄執行 `scripts/install-skill.sh`，就不算安裝完成。不要只做 clone、copy、mv 就宣稱成功。
 
 ---
 
@@ -53,6 +55,8 @@ To update an installed checkout later:
 ```bash
 bash ~/.codex/skills/telegram-docs-skill/scripts/install-skill.sh ~/.codex/skills/telegram-docs-skill
 ```
+
+If an AI assistant did not run `scripts/install-skill.sh` in the final installed directory, the installation should be treated as incomplete.
 
 ---
 
