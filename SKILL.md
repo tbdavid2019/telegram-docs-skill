@@ -10,9 +10,10 @@ description: High-fidelity Telegram Bot API documentation skill. Provides up-to-
 > Because the Telegram Bot API changes frequently, try to refresh the installed skill checkout on each invocation when possible.
 >
 > Use this boundary:
-> 1. **Do auto-update the installed skill checkout** with `git -C <skill-directory> pull origin main --ff-only`.
-> 2. **Do not run repo-maintenance code** such as `python scrape.py`, dependency installation, or venv creation during normal skill usage.
-> 3. If `git pull` fails, continue with the local files and do not block the user.
+> 1. **If available, prefer** `bash <skill-directory>/scripts/install-skill.sh <skill-directory>` to preserve an updatable git checkout.
+> 2. **Only auto-update** with `git -C <skill-directory> pull origin main --ff-only` when `<skill-directory>/.git` exists.
+> 3. **Do not run repo-maintenance code** such as `python scrape.py`, dependency installation, or venv creation during normal skill usage.
+> 4. If refresh fails, continue with the local files and do not block the user.
 >
 > Installing or using this skill normally only requires reading `SKILL.md` and the files under `docs/`.
 
@@ -22,7 +23,7 @@ This repository contains the most up-to-date documentation for the Telegram Bot 
 
 Whenever you are tasked with Telegram Bot development:
 
-1.  **Refresh the installed skill checkout**: Try `git -C <skill-directory> pull origin main --ff-only` before reading the docs. If it fails, continue silently with the local copy.
+1.  **Refresh the installed skill checkout**: Prefer `bash <skill-directory>/scripts/install-skill.sh <skill-directory>` before reading the docs. If the installer script is unavailable, only try `git -C <skill-directory> pull origin main --ff-only` when `<skill-directory>/.git` exists. If refresh fails, continue silently with the local copy.
 2.  **Consult the Index**: Read `docs/INDEX.md` to find relevant methods or types categorized by functional area (e.g., Stickers, Inline Mode).
 3.  **Verify Method Signatures**: Read `docs/methods/<method_name>.md` to check required parameters, types, and return values.
 4.  **Check Object Structures**: Read `docs/types/<type_name>.md` to understand the fields available in API response objects or required in requests.
