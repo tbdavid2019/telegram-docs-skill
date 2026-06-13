@@ -37,6 +37,5 @@ jobs:
         body: >
           This is an automated PR. Please check the diff, and the action logs, to check for any funky behaviour.
         branch: automated/bot-api-update
-        assignees: tbdavid2019
         labels: automated
         delete-branch: true
