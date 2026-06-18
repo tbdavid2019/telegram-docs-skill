@@ -10,4 +10,4 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| new_owner | User | Optional | Optional. The user which will be the new owner of the chat if the previous owner does not return to the chat |
+| new_owner | User | Optional | Optional. The user who will become the new owner of the chat if the previous owner does not return to the chat |

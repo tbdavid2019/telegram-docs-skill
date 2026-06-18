@@ -2,7 +2,7 @@
 
 **Category**: Available types
 
-**Description**: This object represents a custom keyboard with reply options (see Introduction to bots for details and examples). Not supported in channels and for messages sent on behalf of a Telegram Business account.
+**Description**: This object represents a custom keyboard with reply options (see Introduction to bots for details and examples). Not supported in channels and for messages sent on behalf of a business account.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#replykeyboardmarkup)
 

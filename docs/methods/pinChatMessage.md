@@ -13,6 +13,6 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | business_connection_id | String | Optional | Unique identifier of the business connection on behalf of which the message will be pinned |
-| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target channel (in the format @channelusername) |
+| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target channel in the format @username |
 | message_id | Integer | Yes | Identifier of a message to pin |
 | disable_notification | Boolean | Optional | Pass True if it is not necessary to send a notification to all chat members about the new pinned message. Notifications are always disabled in channels and private chats. |

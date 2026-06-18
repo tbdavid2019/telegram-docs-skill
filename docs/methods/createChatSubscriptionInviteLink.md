@@ -12,7 +12,7 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| chat_id | Integer or String | Yes | Unique identifier for the target channel chat or username of the target channel (in the format @channelusername) |
+| chat_id | Integer or String | Yes | Unique identifier for the target channel chat or username of the target channel in the format @username |
 | name | String | Optional | Invite link name; 0-32 characters |
 | subscription_period | Integer | Yes | The number of seconds the subscription will be active for before the next payment. Currently, it must always be 2592000 (30 days). |
 | subscription_price | Integer | Yes | The amount of Telegram Stars a user must pay initially and after each subsequent subscription period to be a member of the chat; 1-10000 |

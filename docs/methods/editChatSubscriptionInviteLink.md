@@ -12,6 +12,6 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target channel (in the format @channelusername) |
+| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target channel in the format @username |
 | invite_link | String | Yes | The invite link to edit |
 | name | String | Optional | Invite link name; 0-32 characters |

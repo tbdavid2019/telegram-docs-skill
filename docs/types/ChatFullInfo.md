@@ -60,4 +60,5 @@
 | rating | UserRating | Optional | Optional. For private chats, the rating of the user if any |
 | first_profile_audio | Audio | Optional | Optional. For private chats, the first audio added to the profile of the user |
 | unique_gift_colors | UniqueGiftColors | Optional | Optional. The color scheme based on a unique gift that must be used for the chat's name, message replies and link previews |
-| paid_message_star_count | Integer | Optional | Optional. The number of Telegram Stars a general user have to pay to send a message to the chat |
+| paid_message_star_count | Integer | Optional | Optional. The number of Telegram Stars a general user has to pay to send a message to the chat |
+| guard_bot | User | Optional | Optional. The bot that processes join request queries in the chat. The field is only available to chat administrators. |

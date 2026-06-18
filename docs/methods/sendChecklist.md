@@ -13,7 +13,7 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | business_connection_id | String | Yes | Unique identifier of the business connection on behalf of which the message will be sent |
-| chat_id | Integer | Yes | Unique identifier for the target chat |
+| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target bot in the format @username |
 | checklist | InputChecklist | Yes | A JSON-serialized object for the checklist to send |
 | disable_notification | Boolean | Optional | Sends the message silently. Users will receive a notification with no sound. |
 | protect_content | Boolean | Optional | Protects the contents of the sent message from forwarding and saving |

@@ -16,5 +16,5 @@
 | document | Document | Yes | Document with the pattern |
 | fill | BackgroundFill | Yes | The background fill that is combined with the pattern |
 | intensity | Integer | Yes | Intensity of the pattern when it is shown above the filled background; 0-100 |
-| is_inverted | Boolean | Optional | Optional. True, if the background fill must be applied only to the pattern itself. All other pixels are black in this case. For dark themes only |
+| is_inverted | Boolean | Optional | Optional. True, if the background fill must be applied only to the pattern itself. All other pixels are black in this case. For dark themes only. |
 | is_moving | Boolean | Optional | Optional. True, if the background moves slightly when the device is tilted |

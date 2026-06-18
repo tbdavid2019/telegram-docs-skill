@@ -14,7 +14,7 @@
 |---|---|---|---|
 | type | String | Yes | Type of the result, must be photo |
 | id | String | Yes | Unique identifier for this result, 1-64 bytes |
-| photo_url | String | Yes | A valid URL of the photo. Photo must be in JPEG format. Photo size must not exceed 5MB |
+| photo_url | String | Yes | A valid URL of the photo. Photo must be in JPEG format. Photo size must not exceed 5MB. |
 | thumbnail_url | String | Yes | URL of the thumbnail for the photo |
 | photo_width | Integer | Optional | Optional. Width of the photo |
 | photo_height | Integer | Optional | Optional. Height of the photo |

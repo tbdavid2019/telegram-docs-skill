@@ -20,4 +20,4 @@
 | exclude_unique | Boolean | Optional | Pass True to exclude unique gifts |
 | sort_by_price | Boolean | Optional | Pass True to sort results by gift price instead of send date. Sorting is applied before pagination. |
 | offset | String | Optional | Offset of the first entry to return as received from the previous request; use an empty string to get the first chunk of results |
-| limit | Integer | Optional | The maximum number of gifts to be returned; 1-100. Defaults to 100 |
+| limit | Integer | Optional | The maximum number of gifts to be returned; 1-100. Defaults to 100. |
