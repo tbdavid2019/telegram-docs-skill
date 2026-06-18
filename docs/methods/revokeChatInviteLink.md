@@ -12,5 +12,5 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| chat_id | Integer or String | Yes | Unique identifier of the target chat or username of the target channel (in the format @channelusername) |
+| chat_id | Integer or String | Yes | Unique identifier of the target chat or username of the target channel in the format @username |
 | invite_link | String | Yes | The invite link to revoke |

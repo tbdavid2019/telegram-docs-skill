@@ -12,5 +12,5 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target supergroup (in the format @supergroupusername) |
+| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target supergroup in the format @username |
 | sticker_set_name | String | Yes | Name of the sticker set to be set as the group sticker set |

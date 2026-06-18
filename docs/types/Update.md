@@ -3,7 +3,7 @@
 **Category**: Getting updates
 
 **Description**: This object represents an incoming update.
-At most one of the optional parameters can be present in any given update.
+At most one of the optional fields can be present in any given update.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#update)
 
@@ -20,15 +20,16 @@ At most one of the optional parameters can be present in any given update.
 | business_message | Message | Optional | Optional. New message from a connected business account |
 | edited_business_message | Message | Optional | Optional. New version of a message from a connected business account |
 | deleted_business_messages | BusinessMessagesDeleted | Optional | Optional. Messages were deleted from a connected business account |
+| guest_message | Message | Optional | Optional. New guest message. The bot can use the field Message.guest_query_id and the method answerGuestQuery to send a message in response. |
 | message_reaction | MessageReactionUpdated | Optional | Optional. A reaction to a message was changed by a user. The bot must be an administrator in the chat and must explicitly specify "message_reaction" in the list of allowed_updates to receive these updates. The update isn't received for reactions set by bots. |
 | message_reaction_count | MessageReactionCountUpdated | Optional | Optional. Reactions to a message with anonymous reactions were changed. The bot must be an administrator in the chat and must explicitly specify "message_reaction_count" in the list of allowed_updates to receive these updates. The updates are grouped and can be sent with delay up to a few minutes. |
 | inline_query | InlineQuery | Optional | Optional. New incoming inline query |
 | chosen_inline_result | ChosenInlineResult | Optional | Optional. The result of an inline query that was chosen by a user and sent to their chat partner. Please see our documentation on the feedback collecting for details on how to enable these updates for your bot. |
 | callback_query | CallbackQuery | Optional | Optional. New incoming callback query |
-| shipping_query | ShippingQuery | Optional | Optional. New incoming shipping query. Only for invoices with flexible price |
-| pre_checkout_query | PreCheckoutQuery | Optional | Optional. New incoming pre-checkout query. Contains full information about checkout |
+| shipping_query | ShippingQuery | Optional | Optional. New incoming shipping query. Only for invoices with flexible price. |
+| pre_checkout_query | PreCheckoutQuery | Optional | Optional. New incoming pre-checkout query. Contains full information about checkout. |
 | purchased_paid_media | PaidMediaPurchased | Optional | Optional. A user purchased paid media with a non-empty payload sent by the bot in a non-channel chat |
-| poll | Poll | Optional | Optional. New poll state. Bots receive only updates about manually stopped polls and polls, which are sent by the bot |
+| poll | Poll | Optional | Optional. New poll state. Bots receive only updates about manually stopped polls and polls, which are sent by the bot. |
 | poll_answer | PollAnswer | Optional | Optional. A user changed their answer in a non-anonymous poll. Bots receive new votes only in polls that were sent by the bot itself. |
 | my_chat_member | ChatMemberUpdated | Optional | Optional. The bot's chat member status was updated in a chat. For private chats, this update is received only when the bot is blocked or unblocked by the user. |
 | chat_member | ChatMemberUpdated | Optional | Optional. A chat member's status was updated in a chat. The bot must be an administrator in the chat and must explicitly specify "chat_member" in the list of allowed_updates to receive these updates. |

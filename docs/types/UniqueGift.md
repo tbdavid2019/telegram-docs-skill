@@ -12,7 +12,7 @@
 |---|---|---|---|
 | gift_id | String | Yes | Identifier of the regular gift from which the gift was upgraded |
 | base_name | String | Yes | Human-readable name of the regular gift from which this unique gift was upgraded |
-| name | String | Yes | Unique name of the gift. This name can be used in https://t.me/nft/... links and story areas |
+| name | String | Yes | Unique name of the gift. This name can be used in https://t.me/nft/... links and story areas. |
 | number | Integer | Yes | Unique number of the upgraded gift among gifts upgraded from the same regular gift |
 | model | UniqueGiftModel | Yes | Model of the gift |
 | symbol | UniqueGiftSymbol | Yes | Symbol of the gift |

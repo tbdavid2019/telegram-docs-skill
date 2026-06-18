@@ -11,4 +11,4 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | id | String | Yes | Unique identifier of the prepared message |
-| expiration_date | Integer | Yes | Expiration date of the prepared message, in Unix time. Expired prepared messages can no longer be used |
+| expiration_date | Integer | Yes | Expiration date of the prepared message, in Unix time. Expired prepared messages can no longer be used. |

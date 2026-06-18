@@ -10,7 +10,7 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| location | Location | Yes | Venue location. Can't be a live location |
+| location | Location | Yes | Venue location. Can't be a live location. |
 | title | String | Yes | Name of the venue |
 | address | String | Yes | Address of the venue |
 | foursquare_id | String | Optional | Optional. Foursquare identifier of the venue |

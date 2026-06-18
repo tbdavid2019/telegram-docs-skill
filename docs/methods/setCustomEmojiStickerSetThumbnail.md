@@ -13,4 +13,4 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | name | String | Yes | Sticker set name |
-| custom_emoji_id | String | Optional | Custom emoji identifier of a sticker from the sticker set; pass an empty string to drop the thumbnail and use the first sticker as the thumbnail. |
+| custom_emoji_id | String | Optional | Custom emoji identifier of a sticker from the sticker set; pass an empty string to drop the thumbnail and use the first sticker as the thumbnail |

@@ -13,6 +13,7 @@
 | persistent_id | String | Yes | Unique identifier of the option, persistent on option addition and deletion |
 | text | String | Yes | Option text, 1-100 characters |
 | text_entities | Array of MessageEntity | Optional | Optional. Special entities that appear in the option text. Currently, only custom emoji entities are allowed in poll option texts |
+| media | PollMedia | Optional | Optional. Media added to the poll option |
 | voter_count | Integer | Yes | Number of users who voted for this option; may be 0 if unknown |
 | added_by_user | User | Optional | Optional. User who added the option; omitted if the option wasn't added by a user after poll creation |
 | added_by_chat | Chat | Optional | Optional. Chat that added the option; omitted if the option wasn't added by a chat after poll creation |

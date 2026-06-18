@@ -12,5 +12,5 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target supergroup (in the format @supergroupusername) |
+| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target supergroup in the format @username |
 | message_thread_id | Integer | Yes | Unique identifier for the target message thread of the forum topic |

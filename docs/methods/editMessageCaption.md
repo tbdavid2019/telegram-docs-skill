@@ -13,11 +13,11 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | business_connection_id | String | Optional | Unique identifier of the business connection on behalf of which the message to be edited was sent |
-| chat_id | Integer or String | Optional | Required if inline_message_id is not specified. Unique identifier for the target chat or username of the target channel (in the format @channelusername) |
-| message_id | Integer | Optional | Required if inline_message_id is not specified. Identifier of the message to edit |
-| inline_message_id | String | Optional | Required if chat_id and message_id are not specified. Identifier of the inline message |
+| chat_id | Integer or String | Optional | Required if inline_message_id is not specified. Unique identifier for the target chat or username of the target bot, supergroup or channel in the format @username. |
+| message_id | Integer | Optional | Required if inline_message_id is not specified. Identifier of the message to edit. |
+| inline_message_id | String | Optional | Required if chat_id and message_id are not specified. Identifier of the inline message. |
 | caption | String | Optional | New caption of the message, 0-1024 characters after entities parsing |
 | parse_mode | String | Optional | Mode for parsing entities in the message caption. See formatting options for more details. |
 | caption_entities | Array of MessageEntity | Optional | A JSON-serialized list of special entities that appear in the caption, which can be specified instead of parse_mode |
 | show_caption_above_media | Boolean | Optional | Pass True, if the caption must be shown above the message media. Supported only for animation, photo and video messages. |
-| reply_markup | InlineKeyboardMarkup | Optional | A JSON-serialized object for an inline keyboard. |
+| reply_markup | InlineKeyboardMarkup | Optional | A JSON-serialized object for an inline keyboard |
