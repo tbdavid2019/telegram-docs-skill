@@ -12,6 +12,6 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| chat_id | Integer or String | Yes | Unique identifier for the target group or username of the target supergroup or channel (in the format @channelusername) |
+| chat_id | Integer or String | Yes | Unique identifier for the target group or username of the target supergroup or channel in the format @username |
 | user_id | Integer | Yes | Unique identifier of the target user |
 | only_if_banned | Boolean | Optional | Do nothing if the user is not banned |

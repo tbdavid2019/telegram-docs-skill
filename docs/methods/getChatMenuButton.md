@@ -12,4 +12,4 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| chat_id | Integer | Optional | Unique identifier for the target private chat. If not specified, default bot's menu button will be returned |
+| chat_id | Integer | Optional | Unique identifier for the target private chat. If not specified, the bot's default menu button will be returned. |

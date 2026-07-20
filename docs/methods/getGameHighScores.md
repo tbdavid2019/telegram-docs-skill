@@ -13,6 +13,6 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | user_id | Integer | Yes | Target user id |
-| chat_id | Integer | Optional | Required if inline_message_id is not specified. Unique identifier for the target chat |
-| message_id | Integer | Optional | Required if inline_message_id is not specified. Identifier of the sent message |
-| inline_message_id | String | Optional | Required if chat_id and message_id are not specified. Identifier of the inline message |
+| chat_id | Integer | Optional | Required if inline_message_id is not specified. Unique identifier for the target chat. |
+| message_id | Integer | Optional | Required if inline_message_id is not specified. Identifier of the sent message. |
+| inline_message_id | String | Optional | Required if chat_id and message_id are not specified. Identifier of the inline message. |

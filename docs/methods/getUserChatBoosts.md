@@ -12,5 +12,5 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| chat_id | Integer or String | Yes | Unique identifier for the chat or username of the channel (in the format @channelusername) |
+| chat_id | Integer or String | Yes | Unique identifier for the chat or username of the channel in the format @username |
 | user_id | Integer | Yes | Unique identifier of the target user |

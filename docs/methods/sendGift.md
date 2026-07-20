@@ -13,7 +13,7 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | user_id | Integer | Optional | Required if chat_id is not specified. Unique identifier of the target user who will receive the gift. |
-| chat_id | Integer or String | Optional | Required if user_id is not specified. Unique identifier for the chat or username of the channel (in the format @channelusername) that will receive the gift. |
+| chat_id | Integer or String | Optional | Required if user_id is not specified. Unique identifier for the chat or username of the channel (in the format @username) that will receive the gift. |
 | gift_id | String | Yes | Identifier of the gift; limited gifts can't be sent to channel chats |
 | pay_for_upgrade | Boolean | Optional | Pass True to pay for the gift upgrade from the bot's balance, thereby making the upgrade free for the receiver |
 | text | String | Optional | Text that will be shown along with the gift; 0-128 characters |

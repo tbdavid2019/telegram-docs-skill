@@ -19,11 +19,11 @@
 | gif_height | Integer | Optional | Optional. Height of the GIF |
 | gif_duration | Integer | Optional | Optional. Duration of the GIF in seconds |
 | thumbnail_url | String | Yes | URL of the static (JPEG or GIF) or animated (MPEG4) thumbnail for the result |
-| thumbnail_mime_type | String | Optional | Optional. MIME type of the thumbnail, must be one of "image/jpeg", "image/gif", or "video/mp4". Defaults to "image/jpeg" |
+| thumbnail_mime_type | String | Optional | Optional. MIME type of the thumbnail, must be one of "image/jpeg", "image/gif", or "video/mp4". Defaults to "image/jpeg". |
 | title | String | Optional | Optional. Title for the result |
 | caption | String | Optional | Optional. Caption of the GIF file to be sent, 0-1024 characters after entities parsing |
 | parse_mode | String | Optional | Optional. Mode for parsing entities in the caption. See formatting options for more details. |
 | caption_entities | Array of MessageEntity | Optional | Optional. List of special entities that appear in the caption, which can be specified instead of parse_mode |
-| show_caption_above_media | Boolean | Optional | Optional. Pass True, if the caption must be shown above the message media |
+| show_caption_above_media | Boolean | Optional | Optional. Pass True if the caption must be shown above the message media |
 | reply_markup | InlineKeyboardMarkup | Optional | Optional. Inline keyboard attached to the message |
 | input_message_content | InputMessageContent | Optional | Optional. Content of the message to be sent instead of the GIF animation |

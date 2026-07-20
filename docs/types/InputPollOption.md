@@ -11,5 +11,6 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | text | String | Yes | Option text, 1-100 characters |
-| text_parse_mode | String | Optional | Optional. Mode for parsing entities in the text. See formatting options for more details. Currently, only custom emoji entities are allowed |
-| text_entities | Array of MessageEntity | Optional | Optional. A JSON-serialized list of special entities that appear in the poll option text. It can be specified instead of text_parse_mode |
+| text_parse_mode | String | Optional | Optional. Mode for parsing entities in the text. See formatting options for more details. Currently, only custom emoji entities are allowed. |
+| text_entities | Array of MessageEntity | Optional | Optional. A JSON-serialized list of special entities that appear in the poll option text. It can be specified instead of text_parse_mode. |
+| media | InputPollOptionMedia | Optional | Optional. Media added to the poll option |

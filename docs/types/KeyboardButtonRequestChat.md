@@ -10,8 +10,8 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| request_id | Integer | Yes | Signed 32-bit identifier of the request, which will be received back in the ChatShared object. Must be unique within the message |
-| chat_is_channel | Boolean | Yes | Pass True to request a channel chat, pass False to request a group or a supergroup chat. |
+| request_id | Integer | Yes | Signed 32-bit identifier of the request, which will be received back in the ChatShared object. Must be unique within the message. |
+| chat_is_channel | Boolean | Yes | Pass True to request a channel chat, pass False to request a group or a supergroup chat |
 | chat_is_forum | Boolean | Optional | Optional. Pass True to request a forum supergroup, pass False to request a non-forum chat. If not specified, no additional restrictions are applied. |
 | chat_has_username | Boolean | Optional | Optional. Pass True to request a supergroup or a channel with a username, pass False to request a chat without a username. If not specified, no additional restrictions are applied. |
 | chat_is_created | Boolean | Optional | Optional. Pass True to request a chat owned by the user. Otherwise, no additional restrictions are applied. |

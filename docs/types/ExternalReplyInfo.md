@@ -17,6 +17,7 @@
 | animation | Animation | Optional | Optional. Message is an animation, information about the animation |
 | audio | Audio | Optional | Optional. Message is an audio file, information about the file |
 | document | Document | Optional | Optional. Message is a general file, information about the file |
+| live_photo | LivePhoto | Optional | Optional. Message is a live photo, information about the live photo |
 | paid_media | PaidMediaInfo | Optional | Optional. Message contains paid media; information about the paid media |
 | photo | Array of PhotoSize | Optional | Optional. Message is a photo, available sizes of the photo |
 | sticker | Sticker | Optional | Optional. Message is a sticker, information about the sticker |

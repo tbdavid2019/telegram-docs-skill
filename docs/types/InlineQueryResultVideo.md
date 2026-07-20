@@ -21,7 +21,7 @@
 | caption | String | Optional | Optional. Caption of the video to be sent, 0-1024 characters after entities parsing |
 | parse_mode | String | Optional | Optional. Mode for parsing entities in the video caption. See formatting options for more details. |
 | caption_entities | Array of MessageEntity | Optional | Optional. List of special entities that appear in the caption, which can be specified instead of parse_mode |
-| show_caption_above_media | Boolean | Optional | Optional. Pass True, if the caption must be shown above the message media |
+| show_caption_above_media | Boolean | Optional | Optional. Pass True if the caption must be shown above the message media |
 | video_width | Integer | Optional | Optional. Video width |
 | video_height | Integer | Optional | Optional. Video height |
 | video_duration | Integer | Optional | Optional. Video duration in seconds |
