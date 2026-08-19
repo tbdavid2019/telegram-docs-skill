@@ -1,4 +1,6 @@
 on:
+  push:
+    branches: [main]
   workflow_dispatch: {} # Allow manually kicking off builds
   schedule:
     # GitHub may delay or drop jobs scheduled at the top of the hour.
@@ -11,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     steps:
     - uses: actions/checkout@v5
 
@@ -27,15 +28,15 @@ jobs:
     - name: Scrape website
       run: python scrape.py
 
-    - name: Open Pull Request
-      uses: peter-evans/create-pull-request@v8
-      with:
-        commit-message: >
-          Regenerate bot API docs.
-        title: >
-          Update bot API docs based on the latest changes
-        body: >
-          This is an automated PR. Please check the diff, and the action logs, to check for any funky behaviour.
-        branch: automated/bot-api-update
-        labels: automated
-        delete-branch: true
+    - name: Commit updated docs to main
+      run: |
+        if git diff --quiet; then
+          echo "No documentation changes detected."
+          exit 0
+        fi
+
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -A
+        git commit -m "Regenerate bot API docs."
+        git push origin HEAD:main
