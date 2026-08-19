@@ -26,4 +26,4 @@
 | convert_star_count | Integer | Optional | Optional. Number of Telegram Stars that can be claimed by the receiver instead of the gift; omitted if the gift cannot be converted to Telegram Stars; for gifts received on behalf of business accounts only |
 | prepaid_upgrade_star_count | Integer | Optional | Optional. Number of Telegram Stars that were paid for the ability to upgrade the gift |
 | is_upgrade_separate | Boolean | Optional | Optional. True, if the gift's upgrade was purchased after the gift was sent; for gifts received on behalf of business accounts only |
-| unique_gift_number | Integer | Optional | Optional. Unique number reserved for this gift when upgraded. See the number field in UniqueGift |
+| unique_gift_number | Integer | Optional | Optional. Unique number reserved for this gift when upgraded. See the number field in UniqueGift. |

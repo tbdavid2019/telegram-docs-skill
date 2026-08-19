@@ -12,4 +12,4 @@
 |---|---|---|---|
 | total_count | Integer | Yes | The total number of gifts owned by the user or the chat |
 | gifts | Array of OwnedGift | Yes | The list of gifts |
-| next_offset | String | Optional | Optional. Offset for the next request. If empty, then there are no more results |
+| next_offset | String | Optional | Optional. Offset for the next request. If empty, then there are no more results. |

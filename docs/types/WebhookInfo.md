@@ -18,4 +18,4 @@
 | last_error_message | String | Optional | Optional. Error message in human-readable format for the most recent error that happened when trying to deliver an update via webhook |
 | last_synchronization_error_date | Integer | Optional | Optional. Unix time of the most recent error that happened when trying to synchronize available updates with Telegram datacenters |
 | max_connections | Integer | Optional | Optional. The maximum allowed number of simultaneous HTTPS connections to the webhook for update delivery |
-| allowed_updates | Array of String | Optional | Optional. A list of update types the bot is subscribed to. Defaults to all update types except chat_member |
+| allowed_updates | Array of String | Optional | Optional. A list of update types the bot is subscribed to. Defaults to all update types except chat_member, message_reaction, and message_reaction_count. |

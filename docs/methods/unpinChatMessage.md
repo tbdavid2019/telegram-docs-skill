@@ -13,5 +13,5 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | business_connection_id | String | Optional | Unique identifier of the business connection on behalf of which the message will be unpinned |
-| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target channel (in the format @channelusername) |
+| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target channel in the format @username |
 | message_id | Integer | Optional | Identifier of the message to unpin. Required if business_connection_id is specified. If not specified, the most recent pinned message (by sending date) will be unpinned. |

@@ -11,4 +11,4 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | request_id | Integer | Yes | Identifier of the request |
-| users | Array of SharedUser | Yes | Information about users shared with the bot. |
+| users | Array of SharedUser | Yes | Information about users shared with the bot |

@@ -10,6 +10,6 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| request_id | Integer | Yes | Signed 32-bit identifier of the request. Must be unique within the message |
+| request_id | Integer | Yes | Signed 32-bit identifier of the request. Must be unique within the message. |
 | suggested_name | String | Optional | Optional. Suggested name for the bot |
 | suggested_username | String | Optional | Optional. Suggested username for the bot |
