@@ -16,8 +16,7 @@
 | chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target bot, supergroup or channel in the format @username |
 | message_thread_id | Integer | Optional | Unique identifier for the target message thread (topic) of a forum; for forum supergroups and private chats of bots with forum topic mode enabled only |
 | direct_messages_topic_id | Integer | Optional | Identifier of the direct messages topic to which the message will be sent; required if the message is sent to a direct messages chat |
-| receiver_user_id | Integer | Optional | For outgoing ephemeral messages, unique identifier of the user who will receive the message; for group and supergroup chats only. It is not guaranteed that the user will receive the message, especially if they are offline. See ephemeral message sending for more details. |
-| callback_query_id | String | Optional | For outgoing ephemeral messages, identifier of the callback query which triggered the message if any |
+| ephemeral_message_parameters | EphemeralMessageParameters | Optional | A JSON-serialized object containing the parameters of the ephemeral message to send |
 | phone_number | String | Yes | Contact's phone number |
 | first_name | String | Yes | Contact's first name |
 | last_name | String | Optional | Contact's last name |

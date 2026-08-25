@@ -14,7 +14,7 @@
 |---|---|---|---|
 | type | String | Yes | Type of the block, always "map" |
 | location | Location | Yes | Location of the center of the map |
-| zoom | Integer | Yes | Map zoom level; 13-20 |
+| zoom | Integer | Yes | Map zoom level |
 | width | Integer | Yes | Expected width of the map |
 | height | Integer | Yes | Expected height of the map |
 | caption | RichBlockCaption | Optional | Optional. Caption of the block |

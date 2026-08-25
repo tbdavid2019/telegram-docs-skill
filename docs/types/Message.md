@@ -103,8 +103,9 @@
 | chat_background_set | ChatBackground | Optional | Optional. Service message: chat background set |
 | checklist_tasks_done | ChecklistTasksDone | Optional | Optional. Service message: some tasks in a checklist were marked as done or not done |
 | checklist_tasks_added | ChecklistTasksAdded | Optional | Optional. Service message: tasks were added to a checklist |
-| community_chat_added | CommunityChatAdded | Optional | Optional. Service message: chat added to a Community |
-| community_chat_removed | CommunityChatRemoved | Optional | Optional. Service message: chat removed from a Community |
+| community_chat_added | CommunityChatAdded | Optional | Optional. Service message: chat or bot added to a Community |
+| community_chat_joined | CommunityChatJoined | Optional | Optional. Service message: chat was joined by a user from a Community |
+| community_chat_removed | CommunityChatRemoved | Optional | Optional. Service message: chat or bot removed from a Community |
 | direct_message_price_changed | DirectMessagePriceChanged | Optional | Optional. Service message: the price for paid messages in the corresponding direct messages chat of a channel has changed |
 | forum_topic_created | ForumTopicCreated | Optional | Optional. Service message: forum topic created |
 | forum_topic_edited | ForumTopicEdited | Optional | Optional. Service message: forum topic edited |

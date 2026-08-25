@@ -12,4 +12,4 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| rich_message | InputRichMessage | Yes | The message to be sent |
+| rich_message | InputRichMessage | Yes | The message to be sent. Only previously uploaded files may be used in the message. |

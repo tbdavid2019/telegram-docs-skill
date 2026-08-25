@@ -12,14 +12,17 @@
 - InputRichBlockAnchor
 - InputRichBlockList
 - InputRichBlockBlockQuotation
+- InputRichBlockExpandableBlockQuotation
 - InputRichBlockPullQuotation
 - InputRichBlockCollage
 - InputRichBlockSlideshow
 - InputRichBlockTable
 - InputRichBlockDetails
 - InputRichBlockMap
+- InputRichBlockButtons
 - InputRichBlockAnimation
 - InputRichBlockAudio
+- InputRichBlockDocument
 - InputRichBlockPhoto
 - InputRichBlockVideo
 - InputRichBlockVoiceNote
@@ -27,5 +30,5 @@
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#inputrichblock)
 
-**Subtypes**: InputRichBlockParagraph, InputRichBlockSectionHeading, InputRichBlockPreformatted, InputRichBlockFooter, InputRichBlockDivider, InputRichBlockMathematicalExpression, InputRichBlockAnchor, InputRichBlockList, InputRichBlockBlockQuotation, InputRichBlockPullQuotation, InputRichBlockCollage, InputRichBlockSlideshow, InputRichBlockTable, InputRichBlockDetails, InputRichBlockMap, InputRichBlockAnimation, InputRichBlockAudio, InputRichBlockPhoto, InputRichBlockVideo, InputRichBlockVoiceNote, InputRichBlockThinking
+**Subtypes**: InputRichBlockParagraph, InputRichBlockSectionHeading, InputRichBlockPreformatted, InputRichBlockFooter, InputRichBlockDivider, InputRichBlockMathematicalExpression, InputRichBlockAnchor, InputRichBlockList, InputRichBlockBlockQuotation, InputRichBlockExpandableBlockQuotation, InputRichBlockPullQuotation, InputRichBlockCollage, InputRichBlockSlideshow, InputRichBlockTable, InputRichBlockDetails, InputRichBlockMap, InputRichBlockButtons, InputRichBlockAnimation, InputRichBlockAudio, InputRichBlockDocument, InputRichBlockPhoto, InputRichBlockVideo, InputRichBlockVoiceNote, InputRichBlockThinking
 

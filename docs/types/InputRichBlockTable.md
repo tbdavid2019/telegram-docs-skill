@@ -16,4 +16,5 @@
 | cells | Array of Array of RichBlockTableCell | Yes | Cells of the table |
 | is_bordered | Boolean | Optional | Optional. Pass True if the table has borders |
 | is_striped | Boolean | Optional | Optional. Pass True if the table is striped |
+| is_compact | Boolean | Optional | Optional. Pass True if table cells must have smaller indents |
 | caption | RichText | Optional | Optional. Caption of the table |

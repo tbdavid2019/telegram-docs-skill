@@ -12,14 +12,17 @@
 - RichBlockAnchor
 - RichBlockList
 - RichBlockBlockQuotation
+- RichBlockExpandableBlockQuotation
 - RichBlockPullQuotation
 - RichBlockCollage
 - RichBlockSlideshow
 - RichBlockTable
 - RichBlockDetails
 - RichBlockMap
+- RichBlockButtons
 - RichBlockAnimation
 - RichBlockAudio
+- RichBlockDocument
 - RichBlockPhoto
 - RichBlockVideo
 - RichBlockVoiceNote
@@ -27,5 +30,5 @@
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#richblock)
 
-**Subtypes**: RichBlockParagraph, RichBlockSectionHeading, RichBlockPreformatted, RichBlockFooter, RichBlockDivider, RichBlockMathematicalExpression, RichBlockAnchor, RichBlockList, RichBlockBlockQuotation, RichBlockPullQuotation, RichBlockCollage, RichBlockSlideshow, RichBlockTable, RichBlockDetails, RichBlockMap, RichBlockAnimation, RichBlockAudio, RichBlockPhoto, RichBlockVideo, RichBlockVoiceNote, RichBlockThinking
+**Subtypes**: RichBlockParagraph, RichBlockSectionHeading, RichBlockPreformatted, RichBlockFooter, RichBlockDivider, RichBlockMathematicalExpression, RichBlockAnchor, RichBlockList, RichBlockBlockQuotation, RichBlockExpandableBlockQuotation, RichBlockPullQuotation, RichBlockCollage, RichBlockSlideshow, RichBlockTable, RichBlockDetails, RichBlockMap, RichBlockButtons, RichBlockAnimation, RichBlockAudio, RichBlockDocument, RichBlockPhoto, RichBlockVideo, RichBlockVoiceNote, RichBlockThinking
 

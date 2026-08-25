@@ -38,3 +38,4 @@ At most one of the optional fields can be present in any given update.
 | removed_chat_boost | ChatBoostRemoved | Optional | Optional. A boost was removed from a chat. The bot must be an administrator in the chat to receive these updates. |
 | managed_bot | ManagedBotUpdated | Optional | Optional. A new bot was created to be managed by the bot, or token or owner of a managed bot was changed |
 | subscription | BotSubscriptionUpdated | Optional | Optional. User payment subscription has changed |
+| stopped_message_generation | MessageGenerationStopped | Optional | Optional. A user asked the bot to stop the generation of a message |

@@ -2,7 +2,7 @@
 
 **Category**: Available types
 
-**Description**: Describes a service message about a chat being added to a community.
+**Description**: Describes a service message about a chat or a bot being added to a community.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#communitychatadded)
 
@@ -10,4 +10,4 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| community | Community | Yes | The new community to which the chat belongs |
+| community | Community | Yes | The new community to which the chat or the bot belongs |
