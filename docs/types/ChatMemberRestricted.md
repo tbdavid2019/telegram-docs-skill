@@ -24,7 +24,7 @@
 | can_send_video_notes | Boolean | Yes | True, if the user is allowed to send video notes |
 | can_send_voice_notes | Boolean | Yes | True, if the user is allowed to send voice notes |
 | can_send_polls | Boolean | Yes | True, if the user is allowed to send polls and checklists |
-| can_send_other_messages | Boolean | Yes | True, if the user is allowed to send animations, games, stickers and use inline bots |
+| can_send_other_messages | Boolean | Yes | True, if the user is allowed to send animations, games, stickers, widgets and use inline bots |
 | can_add_web_page_previews | Boolean | Yes | True, if the user is allowed to add web page previews to their messages |
 | can_react_to_messages | Boolean | Yes | True, if the user is allowed to react to messages |
 | can_edit_tag | Boolean | Yes | True, if the user is allowed to edit their own tag |

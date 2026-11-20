@@ -9,8 +9,10 @@
 - InputVenueMessageContent
 - InputContactMessageContent
 - InputInvoiceMessageContent
+- InputWidgetMessageContent
+- InputSharedWidgetMessageContent
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#inputmessagecontent)
 
-**Subtypes**: InputTextMessageContent, InputRichMessageContent, InputLocationMessageContent, InputVenueMessageContent, InputContactMessageContent, InputInvoiceMessageContent
+**Subtypes**: InputTextMessageContent, InputRichMessageContent, InputLocationMessageContent, InputVenueMessageContent, InputContactMessageContent, InputInvoiceMessageContent, InputWidgetMessageContent, InputSharedWidgetMessageContent
 

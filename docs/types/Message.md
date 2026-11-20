@@ -62,9 +62,10 @@
 | video | Video | Optional | Optional. Message is a video, information about the video |
 | video_note | VideoNote | Optional | Optional. Message is a video note, information about the video message |
 | voice | Voice | Optional | Optional. Message is a voice message, information about the file |
-| caption | String | Optional | Optional. Caption for the animation, audio, document, paid media, photo, video or voice |
+| widget | Widget | Optional | Optional. Message is an HTML widget, information about the widget |
+| caption | String | Optional | Optional. Caption for the animation, audio, document, live photo, paid media, photo, video, voice, or widget |
 | caption_entities | Array of MessageEntity | Optional | Optional. For messages with a caption, special entities like usernames, URLs, bot commands, etc. that appear in the caption |
-| show_caption_above_media | Boolean | Optional | Optional. True, if the caption must be shown above the message media |
+| show_caption_above_media | Boolean | Optional | Optional. True, if the caption must be shown above the message media or the widget |
 | has_media_spoiler | Boolean | Optional | Optional. True, if the message media is covered by a spoiler animation |
 | checklist | Checklist | Optional | Optional. Message is a checklist |
 | contact | Contact | Optional | Optional. Message is a shared contact, information about the contact |
@@ -119,6 +120,7 @@
 | giveaway_completed | GiveawayCompleted | Optional | Optional. Service message: a giveaway without public winners was completed |
 | managed_bot_created | ManagedBotCreated | Optional | Optional. Service message: user created a bot that will be managed by the current bot |
 | paid_message_price_changed | PaidMessagePriceChanged | Optional | Optional. Service message: the price for paid messages has changed in the chat |
+| paid_messages_waived | PaidMessagesWaived | Optional | Optional. Service message: the sender of the message used a link of the other user, which allows sending messages to the user without paying Telegram Stars |
 | poll_option_added | PollOptionAdded | Optional | Optional. Service message: answer option was added to a poll |
 | poll_option_deleted | PollOptionDeleted | Optional | Optional. Service message: answer option was deleted from a poll |
 | suggested_post_approved | SuggestedPostApproved | Optional | Optional. Service message: a suggested post was approved |
@@ -126,6 +128,7 @@
 | suggested_post_declined | SuggestedPostDeclined | Optional | Optional. Service message: a suggested post was declined |
 | suggested_post_paid | SuggestedPostPaid | Optional | Optional. Service message: payment for a suggested post was received |
 | suggested_post_refunded | SuggestedPostRefunded | Optional | Optional. Service message: payment for a suggested post was refunded |
+| ton_wallet_transfer | TonWalletTransfer | Optional | Optional. Service message: a transfer with a TON wallet |
 | video_chat_scheduled | VideoChatScheduled | Optional | Optional. Service message: video chat scheduled |
 | video_chat_started | VideoChatStarted | Optional | Optional. Service message: video chat started |
 | video_chat_ended | VideoChatEnded | Optional | Optional. Service message: video chat ended |

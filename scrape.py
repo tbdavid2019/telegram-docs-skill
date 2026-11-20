@@ -1,6 +1,9 @@
 import json
 import re
 import string
+from datetime import datetime
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
 import requests
 from bs4 import BeautifulSoup
@@ -8,9 +11,7 @@ from bs4.element import Tag
 
 TG_CORE_TYPES = ["String", "Boolean", "Integer", "Float"]
 ROOT_URL = "https://core.telegram.org"
-TO_SCRAPE = {
-    "api": ROOT_URL + "/bots/api",
-}
+SOURCE_URL = ROOT_URL + "/bots/api"
 
 METHODS = "methods"
 TYPES = "types"
@@ -26,23 +27,28 @@ APPROVED_MULTI_RETURNS = [
 
 
 def retrieve_info(url: str) -> dict:
-    r = requests.get(url)
-    soup = BeautifulSoup(r.text, features="html5lib")
+    response = requests.get(url, timeout=30)
+    response.raise_for_status()
+    soup = BeautifulSoup(response.text, features="html5lib")
     dev_rules = soup.find("div", {"id": "dev_page_content"})
+    if dev_rules is None:
+        raise ValueError("The Telegram Bot API document is missing its content container")
     curr_type = ""
     curr_name = ""
     curr_section = "General"
 
-    # First header in the body is the release date (with an anchor)
     release_tag = dev_rules.find("h4", recursive=False)
-    changelog_url = url + release_tag.find("a").get("href")
-    # First paragraph in the root body is the version
-    version = dev_rules.find("p", recursive=False).get_text()
+    release_anchor = release_tag.find("a", href=True) if release_tag else None
+    version_tag = release_tag.find_next_sibling("p") if release_tag else None
+    version = re.fullmatch(r"Bot API (\d+(?:\.\d+)+)", version_tag.get_text(strip=True)) if version_tag else None
+    if release_anchor is None or version is None:
+        raise ValueError("Could not identify the Telegram Bot API release")
+    release_date = datetime.strptime(release_tag.get_text(strip=True), "%B %d, %Y").date()
 
     items = {
-        "version": version,
-        "release_date": release_tag.get_text(),
-        "changelog": changelog_url,
+        "version": version.group(1),
+        "release_date": release_date.isoformat(),
+        "changelog": ROOT_URL + "/bots/api-changelog" + release_anchor["href"],
         METHODS: dict(),
         TYPES: dict(),
     }
@@ -358,11 +364,9 @@ def verify_method_parameters(items: dict) -> bool:
     return issue_found
 
 
-import os
-
-def generate_markdown(items: dict):
-    os.makedirs("docs/methods", exist_ok=True)
-    os.makedirs("docs/types", exist_ok=True)
+def generate_markdown(items: dict, destination: Path):
+    (destination / METHODS).mkdir(parents=True)
+    (destination / TYPES).mkdir()
 
     sections = {}
 
@@ -393,8 +397,7 @@ def generate_markdown(items: dict):
                 fdesc = field["description"].replace("\n", " ")
                 content += f"| {field['name']} | {ftypes} | {req} | {fdesc} |\n"
                 
-        with open(f"docs/methods/{name}.md", "w") as f:
-            f.write(content)
+        (destination / METHODS / f"{name}.md").write_text(content, encoding="utf-8")
 
     # Generate Types MD
     for name, data in items[TYPES].items():
@@ -427,8 +430,7 @@ def generate_markdown(items: dict):
                 fdesc = field["description"].replace("\n", " ")
                 content += f"| {field['name']} | {ftypes} | {req} | {fdesc} |\n"
                 
-        with open(f"docs/types/{name}.md", "w") as f:
-            f.write(content)
+        (destination / TYPES / f"{name}.md").write_text(content, encoding="utf-8")
 
     # Generate Index MD
     index_content = "# Telegram Bot API Index\n\n"
@@ -449,19 +451,39 @@ def generate_markdown(items: dict):
                 index_content += f"- [{t}](types/{t}.md)\n"
             index_content += "\n"
             
-    with open("docs/INDEX.md", "w") as f:
-        f.write(index_content)
+    (destination / "INDEX.md").write_text(index_content, encoding="utf-8")
+    source = {
+        "source_url": SOURCE_URL,
+        "bot_api_version": items["version"],
+        "released_at": items["release_date"],
+        "changelog_url": items["changelog"],
+        "method_count": len(items[METHODS]),
+        "type_count": len(items[TYPES]),
+    }
+    (destination / "SOURCE.json").write_text(json.dumps(source, indent=2) + "\n", encoding="utf-8")
 
 
 def main():
-    for filename, url in TO_SCRAPE.items():
-        print("parsing", url)
-        items = retrieve_info(url)
-        if verify_type_parameters(items) or verify_method_parameters(items):
-            print("Failed to validate schema. View logs above for more information.")
-            exit(1)
+    print(f"Parsing {SOURCE_URL}")
+    items = retrieve_info(SOURCE_URL)
+    if "sendMessage" not in items[METHODS] or "Update" not in items[TYPES]:
+        raise ValueError("The Telegram Bot API snapshot is missing required entries")
+    if verify_type_parameters(items) or verify_method_parameters(items):
+        raise ValueError("Failed to validate the Telegram Bot API schema")
 
-        generate_markdown(items)
+    destination = Path("docs")
+    with TemporaryDirectory(dir=".", prefix=".telegram-docs-sync-") as workspace:
+        staged = Path(workspace) / "next"
+        backup = Path(workspace) / "previous"
+        generate_markdown(items, staged)
+        if destination.exists():
+            destination.rename(backup)
+        try:
+            staged.rename(destination)
+        except OSError:
+            if backup.exists():
+                backup.rename(destination)
+            raise
 
 
 if __name__ == '__main__':

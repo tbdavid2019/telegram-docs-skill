@@ -63,3 +63,5 @@
 | paid_message_star_count | Integer | Optional | Optional. The number of Telegram Stars a general user has to pay to send a message to the chat |
 | guard_bot | User | Optional | Optional. The bot that processes join request queries in the chat. The field is only available to chat administrators. |
 | community | Community | Optional | Optional. The Community to which the chat belongs |
+| ton_wallet_card | TonWalletCard | Optional | Optional. For private chats, the TON wallet card of the user, which is shown on their profile page |
+| share_theme | ChatShareTheme | Optional | Optional. For private chats, supergroups and channels, the theme of the screen for sharing a link to the user or the chat; omitted if the default theme is used |

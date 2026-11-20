@@ -1,0 +1,16 @@
+# Method: deleteBusinessAccountGift
+
+**Category**: Available methods
+
+**Description**: Deletes a regular gift owned by a managed business account without receiving Telegram Stars for it. Requires the can_convert_gifts_to_stars business bot right. The gift can be deleted only if it isn't limited (the field total_count of the Gift is omitted) and wasn't refunded. Returns True on success.
+
+**Link**: [Official Documentation](https://core.telegram.org/bots/api#deletebusinessaccountgift)
+
+**Returns**: Boolean
+
+### Parameters
+
+| Field | Type | Required | Description |
+|---|---|---|---|
+| business_connection_id | String | Yes | Unique identifier of the business connection |
+| owned_gift_id | String | Yes | Unique identifier of the regular gift that should be deleted |

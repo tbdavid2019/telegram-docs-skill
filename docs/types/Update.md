@@ -26,6 +26,8 @@ At most one of the optional fields can be present in any given update.
 | inline_query | InlineQuery | Optional | Optional. New incoming inline query |
 | chosen_inline_result | ChosenInlineResult | Optional | Optional. The result of an inline query that was chosen by a user and sent to their chat partner. Please see our documentation on the feedback collecting for details on how to enable these updates for your bot. |
 | callback_query | CallbackQuery | Optional | Optional. New incoming callback query |
+| widget_query | WidgetQuery | Optional | Optional. New incoming query from a widget in a message sent by the bot or via the bot |
+| shared_widget_query | SharedWidgetQuery | Optional | Optional. New incoming query from a forwarded message with a shared widget |
 | shipping_query | ShippingQuery | Optional | Optional. New incoming shipping query. Only for invoices with flexible price. |
 | pre_checkout_query | PreCheckoutQuery | Optional | Optional. New incoming pre-checkout query. Contains full information about checkout. |
 | purchased_paid_media | PaidMediaPurchased | Optional | Optional. A user purchased paid media with a non-empty payload sent by the bot in a non-channel chat |

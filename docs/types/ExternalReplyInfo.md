@@ -25,6 +25,7 @@
 | video | Video | Optional | Optional. Message is a video, information about the video |
 | video_note | VideoNote | Optional | Optional. Message is a video note, information about the video message |
 | voice | Voice | Optional | Optional. Message is a voice message, information about the file |
+| widget | Widget | Optional | Optional. Message is an HTML widget, information about the widget |
 | has_media_spoiler | Boolean | Optional | Optional. True, if the message media is covered by a spoiler animation |
 | checklist | Checklist | Optional | Optional. Message is a checklist |
 | contact | Contact | Optional | Optional. Message is a shared contact, information about the contact |

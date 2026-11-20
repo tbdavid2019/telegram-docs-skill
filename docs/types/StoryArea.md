@@ -10,5 +10,5 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| position | StoryAreaPosition | Yes | Position of the area |
+| position | AreaPosition | Yes | Position of the area |
 | type | StoryAreaType | Yes | Type of the area |

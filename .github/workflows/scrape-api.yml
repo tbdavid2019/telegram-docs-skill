@@ -3,14 +3,17 @@ on:
     branches: [main]
   workflow_dispatch: {} # Allow manually kicking off builds
   schedule:
-    # GitHub may delay or drop jobs scheduled at the top of the hour.
-    # Changing the cron also re-enables a disabled scheduled workflow.
-    - cron:  '17 12 * * *' # Every day at 12:17 UTC.
+    - cron: '23 12 * * *'
 name: Scrape telegram bot API
+
+concurrency:
+  group: telegram-docs-sync
+  cancel-in-progress: false
 jobs:
   build:
     name: Scrape
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
       contents: write
     steps:
@@ -27,16 +30,22 @@ jobs:
 
     - name: Scrape website
       run: python scrape.py
+    - name: Validate snapshot provenance and lookup files
+      run: |
+        test -s docs/SOURCE.json
+        test -s docs/INDEX.md
+        test -s docs/methods/sendMessage.md
+        test -s docs/types/Update.md
 
     - name: Commit updated docs to main
       run: |
-        if git diff --quiet; then
+        git add -A -- docs
+        if git diff --cached --quiet; then
           echo "No documentation changes detected."
           exit 0
         fi
 
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add -A
         git commit -m "Regenerate bot API docs."
         git push origin HEAD:main

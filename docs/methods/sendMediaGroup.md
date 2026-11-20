@@ -13,7 +13,7 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | business_connection_id | String | Optional | Unique identifier of the business connection on behalf of which the message will be sent |
-| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target bot, supergroup or channel in the format @username |
+| chat_id | Integer or String | Yes | Unique identifier for the target chat or username of the target bot, supergroup, or channel in the format @username |
 | message_thread_id | Integer | Optional | Unique identifier for the target message thread (topic) of a forum; for forum supergroups and private chats of bots with forum topic mode enabled only |
 | direct_messages_topic_id | Integer | Optional | Identifier of the direct messages topic to which the messages will be sent; required if the messages are sent to a direct messages chat |
 | media | Array of InputMediaAudio or Array of InputMediaDocument or Array of InputMediaLivePhoto or Array of InputMediaPhoto or Array of InputMediaVideo | Yes | A JSON-serialized Array describing messages to be sent, must include 2-10 items |
