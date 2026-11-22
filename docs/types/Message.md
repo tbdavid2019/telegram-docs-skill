@@ -97,7 +97,7 @@
 | unique_gift | UniqueGiftInfo | Optional | Optional. Service message: a unique gift was sent or received |
 | gift_upgrade_sent | GiftInfo | Optional | Optional. Service message: upgrade of a gift was purchased after the gift was sent |
 | connected_website | String | Optional | Optional. The domain name of the website on which the user has logged in. More about Telegram Login: https://core.telegram.org/widgets/login |
-| write_access_allowed | WriteAccessAllowed | Optional | Optional. Service message: the user allowed the bot to write messages after adding it to the attachment or side menu, launching a Web App from a link, or accepting an explicit request from a Web App sent by the method requestWriteAccess |
+| write_access_allowed | WriteAccessAllowed | Optional | Optional. Service message: the user allowed the bot to write messages after adding it to the attachment or side menu, launching a Web App from a link, or accepting an explicit request from a Web App sent by the method requestWriteAccess, or the user was invited to the private chat with the bot by the owner of the bot |
 | passport_data | PassportData | Optional | Optional. Telegram Passport data |
 | proximity_alert_triggered | ProximityAlertTriggered | Optional | Optional. Service message: a user in the chat triggered another user's proximity alert while sharing Live Location |
 | boost_added | ChatBoostAdded | Optional | Optional. Service message: user boosted the chat |

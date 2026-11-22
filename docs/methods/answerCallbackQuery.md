@@ -2,7 +2,7 @@
 
 **Category**: Available methods
 
-**Description**: Use this method to send answers to callback queries sent from inline keyboards. The answer will be displayed to the user as a notification at the top of the chat screen or as an alert. On success, True is returned.
+**Description**: Use this method to send answers to callback queries sent from inline keyboards or rich messages. The answer will be displayed to the user as a notification at the top of the chat screen or as an alert. On success, True is returned.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#answercallbackquery)
 

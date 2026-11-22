@@ -13,5 +13,5 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | type | String | Yes | Type of the block, always "expandable_blockquote" |
-| text | RichText | Yes | Content of the block |
+| blocks | Array of RichBlock | Yes | Content of the block |
 | credit | RichText | Optional | Optional. Credit of the block |
