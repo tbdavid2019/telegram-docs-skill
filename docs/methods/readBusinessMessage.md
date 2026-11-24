@@ -2,7 +2,7 @@
 
 **Category**: Available methods
 
-**Description**: Marks incoming message as read on behalf of a business account. Requires the can_read_messages business bot right. Returns True on success.
+**Description**: Marks an incoming message as read on behalf of a business account. Requires the can_read_messages business bot right. Returns True on success.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#readbusinessmessage)
 

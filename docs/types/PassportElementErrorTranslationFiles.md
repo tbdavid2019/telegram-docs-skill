@@ -2,7 +2,7 @@
 
 **Category**: Telegram Passport
 
-**Description**: Represents an issue with the translated version of a document. The error is considered resolved when a file with the document translation change.
+**Description**: Represents an issue with the translated version of a document. The error is considered resolved when a file with the document translation changes.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#passportelementerrortranslationfiles)
 

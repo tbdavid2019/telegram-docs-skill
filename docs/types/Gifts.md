@@ -2,7 +2,7 @@
 
 **Category**: Available types
 
-**Description**: This object represent a list of gifts.
+**Description**: This object represents a list of gifts.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#gifts)
 

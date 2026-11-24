@@ -10,7 +10,7 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| id | Integer | Yes | Unique identifier for this chat. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type are safe for storing this identifier. |
+| id | Integer | Yes | Unique identifier for this chat. This number may have more than 32 significant bits and some programming languages may have difficulty/silent defects in interpreting it. But it has at most 52 significant bits, so a signed 64-bit integer or double-precision float type is safe for storing this identifier. |
 | type | String | Yes | Type of the chat, can be either "private", "group", "supergroup" or "channel" |
 | title | String | Optional | Optional. Title, for supergroups, channels and group chats |
 | username | String | Optional | Optional. Username, for private chats, supergroups and channels if available |
@@ -35,7 +35,7 @@
 | emoji_status_custom_emoji_id | String | Optional | Optional. Custom emoji identifier of the emoji status of the chat or the other party in a private chat |
 | emoji_status_expiration_date | Integer | Optional | Optional. Expiration date of the emoji status of the chat or the other party in a private chat, in Unix time, if any |
 | bio | String | Optional | Optional. Bio of the other party in a private chat |
-| has_private_forwards | Boolean | Optional | Optional. True, if privacy settings of the other party in the private chat allows to use tg://user?id=<user_id> links only in chats with the user |
+| has_private_forwards | Boolean | Optional | Optional. True, if the privacy settings of the other party in the private chat allow using tg://user?id=<user_id> links only in chats with the user |
 | has_restricted_voice_and_video_messages | Boolean | Optional | Optional. True, if the privacy settings of the other party restrict sending voice and video note messages in the private chat |
 | join_to_send_messages | Boolean | Optional | Optional. True, if users need to join the supergroup before they can send messages |
 | join_by_request | Boolean | Optional | Optional. True, if all users directly joining the supergroup without using an invite link need to be approved by supergroup administrators |
@@ -55,7 +55,7 @@
 | sticker_set_name | String | Optional | Optional. For supergroups, name of the group sticker set |
 | can_set_sticker_set | Boolean | Optional | Optional. True, if the bot can change the group sticker set |
 | custom_emoji_sticker_set_name | String | Optional | Optional. For supergroups, the name of the group's custom emoji sticker set. Custom emoji from this set can be used by all users and bots in the group. |
-| linked_chat_id | Integer | Optional | Optional. Unique identifier for the linked chat, i.e. the discussion group identifier for a channel and vice versa; for supergroups and channel chats. This identifier may be greater than 32 bits and some programming languages may have difficulty/silent defects in interpreting it. But it is smaller than 52 bits, so a signed 64 bit integer or double-precision float type are safe for storing this identifier. |
+| linked_chat_id | Integer | Optional | Optional. Unique identifier for the linked chat, i.e. the discussion group identifier for a channel and vice versa; for supergroups and channel chats. This identifier may be greater than 32 bits and some programming languages may have difficulty/silent defects in interpreting it. But it is smaller than 52 bits, so a signed 64-bit integer or double-precision float type is safe for storing this identifier. |
 | location | ChatLocation | Optional | Optional. For supergroups, the location to which the supergroup is connected |
 | rating | UserRating | Optional | Optional. For private chats, the rating of the user if any |
 | first_profile_audio | Audio | Optional | Optional. For private chats, the first audio added to the profile of the user |

@@ -2,7 +2,7 @@
 
 **Category**: Inline mode
 
-**Description**: Represents a link to a photo. By default, this photo will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the photo.
+**Description**: Represents a link to a photo. By default, this photo will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the photo.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#inlinequeryresultphoto)
 

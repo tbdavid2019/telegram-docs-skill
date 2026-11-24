@@ -2,7 +2,7 @@
 
 **Category**: Available types
 
-**Description**: This object represent a user's profile pictures.
+**Description**: This object represents a user's profile pictures.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#userprofilephotos)
 

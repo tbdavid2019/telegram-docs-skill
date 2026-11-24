@@ -2,7 +2,7 @@
 
 **Category**: Rich messages
 
-**Description**: A block quotation, corresponding to the HTML tag <blockquote> with custom attribute "expandable".
+**Description**: A block quotation, corresponding to the HTML tag <blockquote> with the custom attribute "expandable".
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#richblockexpandableblockquotation)
 

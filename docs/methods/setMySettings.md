@@ -2,7 +2,7 @@
 
 **Category**: Available methods
 
-**Description**: Use this method to change settings of the bot. Settings that aren't specified remain unchanged. Returns True on success.
+**Description**: Use this method to change the settings of the bot. Settings that aren't specified remain unchanged. Returns True on success.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#setmysettings)
 

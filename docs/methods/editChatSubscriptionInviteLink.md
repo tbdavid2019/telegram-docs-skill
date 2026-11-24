@@ -2,7 +2,7 @@
 
 **Category**: Available methods
 
-**Description**: Use this method to edit a subscription invite link created by the bot. The bot must have the can_invite_users administrator rights. Returns the edited invite link as a ChatInviteLink object.
+**Description**: Use this method to edit a subscription invite link created by the bot. The bot must have the can_invite_users administrator right. Returns the edited invite link as a ChatInviteLink object.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#editchatsubscriptioninvitelink)
 

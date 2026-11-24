@@ -2,7 +2,7 @@
 
 **Category**: Available methods
 
-**Description**: Use this method to create a subscription invite link for a channel chat. The bot must have the can_invite_users administrator rights. The link can be edited using the method editChatSubscriptionInviteLink or revoked using the method revokeChatInviteLink. Returns the new invite link as a ChatInviteLink object.
+**Description**: Use this method to create a subscription invite link for a channel chat. The bot must have the can_invite_users administrator right. The link can be edited using the method editChatSubscriptionInviteLink or revoked using the method revokeChatInviteLink. Returns the new invite link as a ChatInviteLink object.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#createchatsubscriptioninvitelink)
 

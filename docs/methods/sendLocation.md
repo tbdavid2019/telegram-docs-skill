@@ -2,7 +2,7 @@
 
 **Category**: Available methods
 
-**Description**: Use this method to send point on the map. On success, the sent Message is returned.
+**Description**: Use this method to send a point on the map. On success, the sent Message is returned.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#sendlocation)
 

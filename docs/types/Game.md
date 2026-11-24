@@ -2,7 +2,7 @@
 
 **Category**: Games
 
-**Description**: This object represents a game. Use BotFather to create and edit games, their short names will act as unique identifiers.
+**Description**: This object represents a game. Use BotFather to create and edit games; their short names will act as unique identifiers.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#game)
 

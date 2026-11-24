@@ -11,7 +11,7 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | currency | String | Yes | Three-letter ISO 4217 currency code, or "XTR" for payments in Telegram Stars |
-| total_amount | Integer | Yes | Total price in the smallest units of the currency (integer, not float/double). For example, for a price of US$ 1.45 pass amount = 145. See the exp parameter in currencies.json, it shows the number of digits past the decimal point for each currency (2 for the majority of currencies). |
+| total_amount | Integer | Yes | Total price in the smallest units of the currency (integer, not float/double). For example, for a price of US$ 1.45, total_amount = 145. See the exp parameter in currencies.json; it shows the number of digits past the decimal point for each currency (2 for the majority of currencies). |
 | invoice_payload | String | Yes | Bot-specified invoice payload |
 | subscription_expiration_date | Integer | Optional | Optional. Expiration date of the subscription, in Unix time; for recurring payments only |
 | is_recurring | Boolean | Optional | Optional. True, if the payment is a recurring payment for a subscription |

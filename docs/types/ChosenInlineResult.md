@@ -14,5 +14,5 @@ Note: It is necessary to enable inline feedback via @BotFather or using the para
 | result_id | String | Yes | The unique identifier for the result that was chosen |
 | from | User | Yes | The user that chose the result |
 | location | Location | Optional | Optional. Sender location, only for bots that enabled user location requests via @BotFather or using the parameter needs_inline_query_location of the method setMySettings |
-| inline_message_id | String | Optional | Optional. Identifier of the sent inline message. Available only if there is an inline keyboard attached to the message. Will be also received in callback queries and can be used to edit the message. |
+| inline_message_id | String | Optional | Optional. Identifier of the sent inline message. Available only if there is an inline keyboard attached to the message. Will also be received in callback queries and can be used to edit the message. |
 | query | String | Yes | The query that was used to obtain the result |

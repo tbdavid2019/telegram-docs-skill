@@ -2,7 +2,7 @@
 
 **Category**: Updating messages
 
-**Description**: Use this method to edit text, rich and game messages. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned. Note that business messages that were not sent by the bot and do not contain an inline keyboard can only be edited within 48 hours from the time they were sent.
+**Description**: Use this method to edit text, rich and game messages. On success, if the edited message is not an inline message, the edited Message is returned; otherwise, True is returned. Note that business messages that were not sent by the bot and do not contain an inline keyboard can only be edited within 48 hours from the time they were sent.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#editmessagetext)
 
@@ -20,5 +20,5 @@
 | parse_mode | String | Optional | Mode for parsing entities in the message text. See formatting options for more details. |
 | entities | Array of MessageEntity | Optional | A JSON-serialized list of special entities that appear in message text, which can be specified instead of parse_mode |
 | link_preview_options | LinkPreviewOptions | Optional | Link preview generation options for the message |
-| rich_message | InputRichMessage | Optional | New rich content of the message; required if text isn't specified. Direct upload of new files and explicit upload of files by a URL isn't supported when an inline message is edited. |
+| rich_message | InputRichMessage | Optional | New rich content of the message; required if text isn't specified. Direct upload of new files and explicit upload of files by a URL aren't supported when an inline message is edited. |
 | reply_markup | InlineKeyboardMarkup | Optional | A JSON-serialized object for an inline keyboard |

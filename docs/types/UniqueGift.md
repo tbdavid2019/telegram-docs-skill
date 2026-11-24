@@ -17,7 +17,7 @@
 | model | UniqueGiftModel | Yes | Model of the gift |
 | symbol | UniqueGiftSymbol | Yes | Symbol of the gift |
 | backdrop | UniqueGiftBackdrop | Yes | Backdrop of the gift |
-| is_premium | Boolean | Optional | Optional. True, if the original regular gift was exclusively purchaseable by Telegram Premium subscribers |
+| is_premium | Boolean | Optional | Optional. True, if the original regular gift was exclusively purchasable by Telegram Premium subscribers |
 | is_burned | Boolean | Optional | Optional. True, if the gift was used to craft another gift and isn't available anymore |
 | is_from_blockchain | Boolean | Optional | Optional. True, if the gift is assigned from the TON blockchain and can't be resold or transferred in Telegram |
 | colors | UniqueGiftColors | Optional | Optional. The color scheme that can be used by the gift's owner for the chat's name, replies to messages and link previews; for business account gifts and gifts that are currently on sale only |

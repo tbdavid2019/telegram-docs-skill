@@ -15,4 +15,4 @@
 | type | String | Yes | Type of the area, always "suggested_reaction" |
 | reaction_type | ReactionType | Yes | Type of the reaction |
 | is_dark | Boolean | Optional | Optional. Pass True if the reaction area has a dark background |
-| is_flipped | Boolean | Optional | Optional. Pass True if reaction area corner is flipped |
+| is_flipped | Boolean | Optional | Optional. Pass True if the reaction area corner is flipped |

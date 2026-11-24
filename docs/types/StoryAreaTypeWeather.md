@@ -13,6 +13,6 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | type | String | Yes | Type of the area, always "weather" |
-| temperature | Float | Yes | Temperature, in degree Celsius |
+| temperature | Float | Yes | Temperature, in degrees Celsius |
 | emoji | String | Yes | Emoji representing the weather |
 | background_color | Integer | Yes | A color of the area background in the ARGB format |

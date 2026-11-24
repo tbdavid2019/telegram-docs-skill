@@ -27,4 +27,4 @@
 | video_duration | Integer | Optional | Optional. Video duration in seconds |
 | description | String | Optional | Optional. Short description of the result |
 | reply_markup | InlineKeyboardMarkup | Optional | Optional. Inline keyboard attached to the message |
-| input_message_content | InputMessageContent | Optional | Optional. Content of the message to be sent instead of the video. This field is required if InlineQueryResultVideo is used to send an HTML-page as a result (e.g., a YouTube video). |
+| input_message_content | InputMessageContent | Optional | Optional. Content of the message to be sent instead of the video. This field is required if InlineQueryResultVideo is used to send an HTML page as a result (e.g., a YouTube video). |

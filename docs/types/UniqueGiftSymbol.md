@@ -12,4 +12,4 @@
 |---|---|---|---|
 | name | String | Yes | Name of the symbol |
 | sticker | Sticker | Yes | The sticker that represents the unique gift |
-| rarity_per_mille | Integer | Yes | The number of unique gifts that receive this model for every 1000 gifts upgraded |
+| rarity_per_mille | Integer | Yes | The number of unique gifts that receive this symbol for every 1000 gifts upgraded |

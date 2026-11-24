@@ -13,4 +13,4 @@
 | id | String | Yes | Unique query identifier |
 | from | User | Yes | User who sent the query |
 | invoice_payload | String | Yes | Bot-specified invoice payload |
-| shipping_address | ShippingAddress | Yes | User specified shipping address |
+| shipping_address | ShippingAddress | Yes | User-specified shipping address |

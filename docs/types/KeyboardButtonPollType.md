@@ -2,7 +2,7 @@
 
 **Category**: Available types
 
-**Description**: This object represents type of a poll, which is allowed to be created and sent when the corresponding button is pressed.
+**Description**: This object represents the type of a poll, which is allowed to be created and sent when the corresponding button is pressed.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#keyboardbuttonpolltype)
 

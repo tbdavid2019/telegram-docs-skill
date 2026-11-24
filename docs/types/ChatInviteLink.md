@@ -16,7 +16,7 @@
 | is_primary | Boolean | Yes | True, if the link is primary |
 | is_revoked | Boolean | Yes | True, if the link is revoked |
 | name | String | Optional | Optional. Invite link name |
-| expire_date | Integer | Optional | Optional. Point in time (Unix timestamp) when the link will expire or has been expired |
+| expire_date | Integer | Optional | Optional. Point in time (Unix timestamp) when the link will expire or has expired |
 | member_limit | Integer | Optional | Optional. The maximum number of users that can be members of the chat simultaneously after joining the chat via this invite link; 1-99999 |
 | pending_join_request_count | Integer | Optional | Optional. Number of pending join requests created using this link |
 | subscription_period | Integer | Optional | Optional. The number of seconds the subscription will be active for before the next payment |

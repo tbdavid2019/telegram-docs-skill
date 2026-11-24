@@ -2,7 +2,7 @@
 
 **Category**: Available methods
 
-**Description**: Use this method to send again a shared widget created by the bot. Currently, in the production environment, widgets can be sent only to private chats, and sent widgets automatically have protected content and therefore can't be forwarded. On success, the sent Message is returned.
+**Description**: Use this method to resend a shared widget created by the bot. Currently, in the production environment, widgets can be sent only to private chats, and sent widgets automatically have protected content and therefore can't be forwarded. On success, the sent Message is returned.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#sendsharedwidget)
 

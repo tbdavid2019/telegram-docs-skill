@@ -2,7 +2,7 @@
 
 **Category**: Updating messages
 
-**Description**: Use this method to edit only the reply markup of messages. On success, if the edited message is not an inline message, the edited Message is returned, otherwise True is returned. Note that business messages that were not sent by the bot and do not contain an inline keyboard can only be edited within 48 hours from the time they were sent.
+**Description**: Use this method to edit only the reply markup of messages. On success, if the edited message is not an inline message, the edited Message is returned; otherwise, True is returned. Note that business messages that were not sent by the bot and do not contain an inline keyboard can only be edited within 48 hours from the time they were sent.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#editmessagereplymarkup)
 

@@ -14,4 +14,4 @@
 |---|---|---|---|
 | type | String | Yes | Type of the rich text, always "anchor_link" |
 | text | RichText | Yes | The link text |
-| anchor_name | String | Yes | The name of the anchor. If the name is empty, then the link brings back to the top of the message. |
+| anchor_name | String | Yes | The name of the anchor. If the name is empty, then the link brings the user back to the top of the message. |

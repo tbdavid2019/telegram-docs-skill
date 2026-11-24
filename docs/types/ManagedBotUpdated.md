@@ -11,4 +11,4 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | user | User | Yes | User that created the bot |
-| bot | User | Yes | Information about the bot. Token of the bot can be fetched using the method getManagedBotToken. |
+| bot | User | Yes | Information about the bot. The token of the bot can be fetched using the method getManagedBotToken. |

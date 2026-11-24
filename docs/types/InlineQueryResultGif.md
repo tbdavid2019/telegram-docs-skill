@@ -2,7 +2,7 @@
 
 **Category**: Inline mode
 
-**Description**: Represents a link to an animated GIF file. By default, this animated GIF file will be sent by the user with optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.
+**Description**: Represents a link to an animated GIF file. By default, this animated GIF file will be sent by the user with an optional caption. Alternatively, you can use input_message_content to send a message with the specified content instead of the animation.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#inlinequeryresultgif)
 

@@ -10,5 +10,5 @@
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| data | Array of EncryptedPassportElement | Yes | Array with information about documents and other Telegram Passport elements that was shared with the bot |
+| data | Array of EncryptedPassportElement | Yes | Array with information shared with the bot about documents and other Telegram Passport elements |
 | credentials | EncryptedCredentials | Yes | Encrypted credentials required to decrypt the data |

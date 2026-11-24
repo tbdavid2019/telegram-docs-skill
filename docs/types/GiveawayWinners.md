@@ -21,4 +21,4 @@
 | unclaimed_prize_count | Integer | Optional | Optional. Number of undistributed prizes |
 | only_new_members | Boolean | Optional | Optional. True, if only users who had joined the chats after the giveaway started were eligible to win |
 | was_refunded | Boolean | Optional | Optional. True, if the giveaway was canceled because the payment for it was refunded |
-| prize_description | String | Optional | Optional. Description of additional giveaway prize |
+| prize_description | String | Optional | Optional. Description of an additional giveaway prize |

@@ -14,4 +14,4 @@
 | format | String | Yes | Format of the added sticker, must be one of "static" for a .WEBP or .PNG image, "animated" for a .TGS animation, "video" for a .WEBM video |
 | emoji_list | Array of String | Yes | List of 1-20 emoji associated with the sticker |
 | mask_position | MaskPosition | Optional | Optional. Position where the mask should be placed on faces. For "mask" stickers only. |
-| keywords | Array of String | Optional | Optional. List of 0-20 search keywords for the sticker with total length of up to 64 characters. For "regular" and "custom_emoji" stickers only. |
+| keywords | Array of String | Optional | Optional. List of 0-20 search keywords for the sticker with a total length of up to 64 characters. For "regular" and "custom_emoji" stickers only. |

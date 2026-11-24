@@ -2,6 +2,8 @@
 
 **Category**: Available types
 
+**Description**: Describes the parameters of an ephemeral message to be sent.
+
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#ephemeralmessageparameters)
 
 ### Fields

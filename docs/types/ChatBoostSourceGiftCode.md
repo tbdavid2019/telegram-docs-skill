@@ -13,4 +13,4 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | source | String | Yes | Source of the boost, always "gift_code" |
-| user | User | Yes | User for which the gift code was created |
+| user | User | Yes | User for whom the gift code was created |

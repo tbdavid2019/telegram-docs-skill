@@ -2,7 +2,7 @@
 
 **Category**: Available methods
 
-**Description**: Changes the username of a managed business account. Requires the can_change_username business bot right. Returns True on success.
+**Description**: Changes the username of a managed business account. Requires the can_edit_username business bot right. Returns True on success.
 
 **Link**: [Official Documentation](https://core.telegram.org/bots/api#setbusinessaccountusername)
 

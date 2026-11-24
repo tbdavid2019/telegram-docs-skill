@@ -13,4 +13,4 @@
 | Field | Type | Required | Description |
 |---|---|---|---|
 | sticker | String | Yes | File identifier of the sticker |
-| keywords | Array of String | Optional | A JSON-serialized list of 0-20 search keywords for the sticker with total length of up to 64 characters |
+| keywords | Array of String | Optional | A JSON-serialized list of 0-20 search keywords for the sticker with a total length of up to 64 characters |
